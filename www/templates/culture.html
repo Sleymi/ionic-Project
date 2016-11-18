@@ -1,0 +1,21 @@
+<ion-view view-title="Culture">
+  <ion-content>
+    <h1>Culture</h1> 
+
+     
+
+        
+        <a ng-repeat="item in actualit" 
+
+           href="#/app/cultureDetail/{{item.id}}" 
+           class="item item-thumbnail-left">
+
+          <img ng-src="{{item.image}}">
+          <h2>{{item.title}}</h2>
+          
+        </a>
+
+      </div>
+      
+  </ion-content>
+  </ion-view> 

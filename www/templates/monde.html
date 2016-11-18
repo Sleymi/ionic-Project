@@ -1,0 +1,22 @@
+<ion-view view-title="Monde">
+  <ion-content>
+  
+
+      
+      <div class="list">
+
+        
+        <a ng-repeat="item in actualit" 
+
+           href="#/app/mondeDetail/{{item.id}}" 
+           class="item item-thumbnail-left">
+
+          <img ng-src="{{item.image}}">
+          <h2>{{item.title}}</h2>
+          
+        </a>
+
+      </div>
+      
+  </ion-content>
+  </ion-view> 

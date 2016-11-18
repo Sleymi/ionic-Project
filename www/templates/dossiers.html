@@ -1,0 +1,32 @@
+<ion-view view-title="Search">
+  <ion-content>
+    <ion-item ng-repeat="playlist in dossiers" >
+        {{playlist.title}}
+      </ion-item>
+      <h2>bonjour tout le monde</h2>
+
+      
+      {{name}}
+      {{city_info.name}}<br>
+      {{city_info.country}}<br>
+      {{city_info.latitude}}<br>
+      {{city_info.longitude}}<br>
+      {{city_info.elevation}}<br>
+     
+       <ion-item ng-repeat="item in m" >
+        {{item.genre}}
+      </ion-item>
+  
+        <ion-item ng-repeat="item in zitouna" >
+        {{item.name}}
+        {{item.distance}}
+        {{item.light}}
+      </ion-item>
+                  <div class="list" ng-init="init()">
+                    <div ng-repeat="entry in entries" class="item">
+                        <b>{{entry.title}}</b><br>
+                        <span ng-bind-html="entry.contentSnippet"></span>
+                    </div>
+                  </div>
+  </ion-content>
+</ion-view>

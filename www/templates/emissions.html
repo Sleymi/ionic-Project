@@ -1,0 +1,58 @@
+  <ion-view view-title="Les emissions">
+  <ion-content>
+    <h1 align="center">emissions</h1>
+    	
+	
+
+
+
+   
+
+    <!--
+    <ion-list >
+      <ion-item ng-repeat="playlist in emission" href="#/app/emissionWatch/{{playlist.id}}">
+       <h1> {{playlist.designation}}</h1>
+      </ion-item> 
+    </ion-list>
+     -->
+
+
+    <div class="list">
+
+        
+        <a ng-repeat="item in emission" 
+
+           href="#/app/emissionWatch/{{item.id}}" 
+           class="item item-thumbnail-left">
+
+          
+          <h2><b>{{item.designation}}</b></h2>
+          
+        </a>
+
+      </div>
+
+
+      <!-- 
+      <ion-item ng-repeat="item in emission" >
+        <a href="#/app/emissionWatch/{{item.id}}"> {{item.designation}}</a>
+      </ion-item>
+      -->
+
+
+  </ion-content>
+  <div class="tabs tabs-icon-left tabs-positive">
+            <a class="tab-item" href="https://web.facebook.com/zitounatv.official/?fref=ts">
+              <i class="icon ion-social-facebook"></i>
+              facebook
+            </a>
+            <a class="tab-item" href="http://www.zitounatv.com/">
+              <i class="icon ion-ios-world"></i>
+              zitounatv.com
+            </a>
+            <a class="tab-item" href="https://www.youtube.com/channel/UCQ7Y6rkrtJK9OfxYD-iWsbg">
+              <i class="icon ion-social-youtube"  ></i>
+              youtube
+            </a>
+              </div>
+  </ion-view>

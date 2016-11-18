@@ -1,0 +1,22 @@
+<ion-view view-title="Tunisie">
+  <ion-content>
+  
+
+      
+      <div class="list">
+
+        
+        <a ng-repeat="item in actualit" 
+
+           href="#/app/tunisieDetail/{{item.id}}" 
+           class="item item-thumbnail-left">
+
+          <img ng-src="{{item.image}}">
+          <h2>{{item.title}}</h2>
+          
+        </a>
+
+      </div>
+      
+  </ion-content>
+  </ion-view> 

@@ -1,0 +1,21 @@
+<ion-view view-title="Technologie">
+  <ion-content>
+    <h1>Technologie</h1> 
+
+     
+
+        
+        <a ng-repeat="item in actualit" 
+
+           href="#/app/technologieDetail/{{item.id}}" 
+           class="item item-thumbnail-left">
+
+          <img ng-src="{{item.image}}">
+          <h2>{{item.title}}</h2>
+          
+        </a>
+
+      </div>
+      
+  </ion-content>
+  </ion-view> 
